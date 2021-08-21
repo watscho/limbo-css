@@ -1,4 +1,6 @@
-# limbo.css
+# limbo-css
+
+
 
 ## Install
 
