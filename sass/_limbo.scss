@@ -1,0 +1,136 @@
+abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, u, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font-weight: 400;
+	font-style: normal;
+	line-height: 100%;
+	vertical-align: baseline;
+	background: 0 0;
+  }
+  
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+  }
+  
+  body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  ol, ul {
+	list-style: none;
+  }
+  
+  blockquote, q {
+	quotes: none;
+  }
+  
+  a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: 0 0;
+	text-decoration: none;
+	color: #000;
+  }
+  
+  code {
+	font-family: inherit;
+  }
+  
+  ins {
+	background-color: transparent;
+	color: #000;
+	text-decoration: none;
+  }
+  
+  mark {
+	background-color: transparent;
+	color: #000;
+	font-style: normal;
+	font-weight: 400;
+  }
+  
+  del {
+	text-decoration: none;
+  }
+  
+  abbr[title], dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+  }
+  
+  table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  }
+  
+  hr {
+	display: block;
+	height: 1px;
+	background-color: #ccc;
+	border: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  input, select {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 100%;
+	border: none;
+	background-color: transparent;
+  }
+  
+  textarea {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 100%;
+	border: none;
+	background-color: transparent;
+	resize: none;
+  }
+  
+  button, input[type="submit"], label {
+	cursor: pointer;
+  }
+  
+  button {
+	display: block;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-family: inherit;
+	background-color: transparent;
+  }
+  
+  th {
+	font-weight: 400;
+	text-align: left;
+  }
+  
+  s, u {
+	text-decoration: none;
+  }
+  
+  *, a, area, button:focus, iframe, img, input:focus, select:focus, textarea:focus {
+	outline: 0;
+  }
+  
+  iframe, img, svg {
+	display: block;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }

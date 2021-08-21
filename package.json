@@ -1,54 +1,30 @@
 {
-  "_from": "limbo-css",
-  "_id": "limbo-css@4.1.2",
-  "_inBundle": false,
-  "_integrity": "sha512-8LCWL8AlAcISktB9XNYVPtmNCZn+8m82TxXRt3WvjFuwadb/DPTjeHzuRbm/iZETnYipZak13DUYK6AntUYmZA==",
-  "_location": "/limbo-css",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "limbo-css",
-    "name": "limbo-css",
-    "escapedName": "limbo-css",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/limbo-css/-/limbo-css-3.0.0.tgz",
-  "_shasum": "e69bb537d73d37de06b30adc2c7474656ef9ce58",
-  "_spec": "limbo-css",
-  "_where": "/Users/watscho/worldwideweb/wcms",
-  "author": {
-    "name": "Watscho Aiwasov"
-  },
+  "name": "limbo-css",
+  "version": "5.0.0",
+  "main": "limbo.css",
+  "repository": "https://github.com/watscho/limbo-css",
+  "author": "Watscho Aiwasov <w4tscho@gmail.com>",
+  "license": "MIT",
+  "style": "limbo.css",
   "bugs": {
     "url": "https://github.com/watscho/limbo-css/issues"
   },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "serve to reset stylesheets, reset css analog.",
+  "description": "Serve to reset stylesheets, reset css analog.",
   "homepage": "https://github.com/watscho/limbo-css#readme",
   "keywords": [
-    "reset",
     "css",
     "stylesheets",
     "analog",
-    "clear",
-    "clean"
+    "reset",
+    "reset-css",
+    "limbo-css",
+    "limbo",
+    "normalize",
+    "normalize-css"
   ],
-  "license": "ISC",
-  "name": "limbo-css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/watscho/limbo-css.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "4.1.2"
+  "files": [
+    "limbo.css",
+    "_limbo.scss",
+    "limbo.less"
+  ]
 }
