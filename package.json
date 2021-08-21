@@ -24,7 +24,7 @@
   ],
   "files": [
     "limbo.css",
-    "_limbo.scss",
-    "limbo.less"
+    "sass",
+    "less"
   ]
 }
