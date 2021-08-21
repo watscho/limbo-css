@@ -56,4 +56,6 @@ Via Sass:
 
 Copy structure from original reset-css
 
-License: none (public domain)
+## License
+
+This project is an open-source with an [MIT License](https://github.com/watscho/limbo-css/blob/master/license)
