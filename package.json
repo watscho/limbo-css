@@ -9,18 +9,19 @@
   "bugs": {
     "url": "https://github.com/watscho/limbo-css/issues"
   },
-  "description": "Serve to reset stylesheets, reset css analog.",
+  "description": "Serve to reset stylesheets, full reset styles.",
   "homepage": "https://github.com/watscho/limbo-css#readme",
   "keywords": [
     "css",
+    "scss",
     "stylesheets",
-    "analog",
+    "full",
     "reset",
     "reset-css",
-    "limbo-css",
     "limbo",
-    "normalize",
-    "normalize-css"
+    "limbo-css",
+    "reset-styles",
+    "full-reset"
   ],
   "files": [
     "limbo.css",
