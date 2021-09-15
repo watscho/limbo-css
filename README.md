@@ -1,8 +1,8 @@
 # limbo-css
 
+Full reset styles.
 
-
-## Install
+### Install
 
 With [NPM](http://npmjs.com):
 
@@ -53,10 +53,6 @@ Via Sass:
 ```scss
 @import '/path/to/limbo-css/sass/limbo';
 ```
-
-## \*Changelog
-
-Copy structure from original reset-css
 
 ## License
 
