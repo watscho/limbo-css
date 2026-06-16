@@ -1,23 +1,56 @@
 {
   "name": "limbo-css",
-  "version": "5.0.4",
-  "main": "limbo.css",
-  "repository": "https://github.com/watscho/limbo-css",
+  "version": "6.0.0",
+  "description": "Opinionated low-specificity CSS reset for modern interfaces.",
   "author": "Watscho Aiwasov <w4tscho@gmail.com>",
-  "license": "MIT",
-  "style": "limbo.css",
   "bugs": {
     "url": "https://github.com/watscho/limbo-css/issues"
   },
-  "description": "Serve to reset stylesheets, full reset styles.",
   "homepage": "https://github.com/watscho/limbo-css#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watscho/limbo-css.git"
+  },
+  "main": "limbo.css",
+  "style": "limbo.css",
+  "sass": "sass/_limbo.scss",
+  "less": "less/limbo.less",
+  "unpkg": "limbo.min.css",
+  "jsdelivr": "limbo.min.css",
+  "exports": {
+    ".": {
+      "style": "./limbo.css",
+      "sass": "./sass/_limbo.scss",
+      "less": "./less/limbo.less",
+      "default": "./limbo.css"
+    },
+    "./limbo.css": "./limbo.css",
+    "./limbo.min.css": "./limbo.min.css",
+    "./sass": "./sass/_limbo.scss",
+    "./sass/limbo": "./sass/_limbo.scss",
+    "./sass/_limbo.scss": "./sass/_limbo.scss",
+    "./less": "./less/limbo.less",
+    "./less/limbo": "./less/limbo.less",
+    "./less/limbo.less": "./less/limbo.less",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": true,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "npm run build && npm pack --dry-run",
+    "prepack": "npm run build"
+  },
   "keywords": [
     "css",
     "scss",
+    "sass",
+    "less",
     "stylesheets",
-    "full",
     "reset",
     "reset-css",
+    "modern-reset",
+    "css-reset",
     "limbo",
     "limbo-css",
     "reset-styles",
@@ -25,7 +58,9 @@
   ],
   "files": [
     "limbo.css",
+    "limbo.min.css",
     "sass",
-    "less"
+    "less",
+    "src"
   ]
 }

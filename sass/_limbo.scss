@@ -1,136 +1,277 @@
-abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, ul, var, u, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 100%;
-	vertical-align: baseline;
-	background: 0 0;
-  }
-  
-  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-	display: block;
-  }
-  
-  body {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  }
-  
-  ol, ul {
-	list-style: none;
-  }
-  
-  blockquote, q {
-	quotes: none;
-  }
-  
-  a {
-	margin: 0;
-	padding: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: 0 0;
-	text-decoration: none;
-	color: #000;
-  }
-  
-  code {
-	font-family: inherit;
-  }
-  
-  ins {
-	background-color: transparent;
-	color: #000;
-	text-decoration: none;
-  }
-  
-  mark {
-	background-color: transparent;
-	color: #000;
-	font-style: normal;
-	font-weight: 400;
-  }
-  
-  del {
-	text-decoration: none;
-  }
-  
-  abbr[title], dfn[title] {
-	border-bottom: 1px dotted;
-	cursor: help;
-  }
-  
-  table {
-	border-collapse: collapse;
-	border-spacing: 0;
-  }
-  
-  hr {
-	display: block;
-	height: 1px;
-	background-color: #ccc;
-	border: none;
-	margin: 0;
-	padding: 0;
-  }
-  
-  input, select {
-	display: block;
-	margin: 0;
-	padding: 0;
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 100%;
-	border: none;
-	background-color: transparent;
-  }
-  
-  textarea {
-	display: block;
-	margin: 0;
-	padding: 0;
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 100%;
-	border: none;
-	background-color: transparent;
-	resize: none;
-  }
-  
-  button, input[type="submit"], label {
-	cursor: pointer;
-  }
-  
-  button {
-	display: block;
-	border: none;
-	padding: 0;
-	font-size: 100%;
-	font-family: inherit;
-	background-color: transparent;
-  }
-  
-  th {
-	font-weight: 400;
-	text-align: left;
-  }
-  
-  s, u {
-	text-decoration: none;
-  }
-  
-  *, a, area, button:focus, iframe, img, input:focus, select:focus, textarea:focus {
-	outline: 0;
-  }
-  
-  iframe, img, svg {
-	display: block;
-  }
-  
-  * {
-	box-sizing: border-box;
-  }
+html {
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:where(html, body) {
+  min-height: 100%;
+}
+
+:where(
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  figure,
+  dl,
+  dd,
+  ol,
+  ul,
+  menu,
+  fieldset,
+  legend,
+  button,
+  input,
+  select,
+  textarea,
+  pre
+) {
+  margin: 0;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  figure,
+  dl,
+  dd,
+  ol,
+  ul,
+  menu,
+  fieldset,
+  legend,
+  button,
+  input,
+  select,
+  textarea
+) {
+  padding: 0;
+}
+
+:where(
+  address,
+  article,
+  aside,
+  audio,
+  b,
+  blockquote,
+  canvas,
+  caption,
+  cite,
+  code,
+  dd,
+  del,
+  details,
+  dfn,
+  dialog,
+  div,
+  dl,
+  dt,
+  em,
+  fieldset,
+  figcaption,
+  figure,
+  footer,
+  form,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  header,
+  hgroup,
+  i,
+  iframe,
+  img,
+  ins,
+  kbd,
+  label,
+  legend,
+  li,
+  main,
+  mark,
+  nav,
+  object,
+  ol,
+  output,
+  p,
+  pre,
+  q,
+  samp,
+  section,
+  small,
+  span,
+  strong,
+  sub,
+  summary,
+  sup,
+  table,
+  tbody,
+  td,
+  tfoot,
+  th,
+  thead,
+  time,
+  tr,
+  u,
+  ul,
+  var,
+  video
+) {
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:where(article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section) {
+  display: block;
+}
+
+:where(ol, ul, menu) {
+  list-style: none;
+}
+
+:where(blockquote, q) {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+:where(a) {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+:where(code, kbd, pre, samp) {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:where(ins, mark) {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+:where(mark) {
+  font-style: normal;
+  font-weight: 400;
+}
+
+:where(del, s, u) {
+  text-decoration: none;
+}
+
+:where(abbr[title], dfn[title]) {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+:where(table) {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:where(caption, th) {
+  font-weight: 400;
+  text-align: left;
+}
+
+:where(hr) {
+  display: block;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  background-color: currentColor;
+}
+
+:where(button, input, optgroup, select, textarea) {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+:where(button, input, select, textarea) {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+:where(button, select) {
+  text-transform: none;
+}
+
+:where(button, [type="button"], [type="reset"], [type="submit"], label[for]) {
+  cursor: pointer;
+}
+
+:where(button:disabled, [type="button"]:disabled, [type="reset"]:disabled, [type="submit"]:disabled) {
+  cursor: default;
+}
+
+:where(textarea) {
+  resize: none;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+:where(img, picture, svg, video, canvas, iframe) {
+  display: block;
+}
+
+:where(img, svg, video, canvas) {
+  max-width: 100%;
+}
+
+:where(img, video) {
+  height: auto;
+}
+
+:where(iframe) {
+  border: 0;
+}
+
+:where([hidden]) {
+  display: none !important;
+}

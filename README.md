@@ -1,59 +1,74 @@
 # limbo-css
 
-Full reset styles.
+Opinionated CSS reset with low specificity and npm-friendly entry points.
 
-### Install
+Limbo is not a strict browser-normalizer. It keeps the reset compact, removes common browser defaults, preserves app colors, leaves native focus outlines intact, and keeps the package easy to import from CSS, Sass, Less, bundlers, and CDNs.
 
-With [NPM](http://npmjs.com):
+## Install
 
 ```command
-$ npm install limbo-css
+npm install limbo-css
 ```
 
-With [Yarn](https://yarnpkg.com):
-
 ```command
-$ yarn add limbo-css
+yarn add limbo-css
 ```
 
 ## Usage
 
-HTML:
-
-```html
-<link rel="stylesheet" href="/path/to/limbo-css/limbo.css" />
-```
-
-CSS:
-
-```css
-@import '/path/to/limbo-css/limbo.css';
-```
-
-Via PostCSS and [postcss-import](https://github.com/postcss/postcss-import):
-
-```css
-@import 'limbo-css';
-```
-
-Via webpack and [css-loader](https://github.com/webpack-contrib/css-loader):
+### Bundlers
 
 ```js
-import 'limbo-css';
+import "limbo-css";
 ```
 
-Via Less:
+Works with Vite, Webpack, Rollup, Parcel, Next.js, Remix, React Router, Astro, SvelteKit, Vue, Angular, and any setup that allows global CSS imports.
 
-```less
-@import '/path/to/limbo-css/less/limbo';
+### CSS and PostCSS
+
+```css
+@import "limbo-css";
 ```
 
-Via Sass:
+```css
+@import "limbo-css/limbo.css";
+```
+
+### Sass
 
 ```scss
-@import '/path/to/limbo-css/sass/limbo';
+@use "limbo-css/sass/limbo";
 ```
+
+### Less
+
+```less
+@import "limbo-css/less/limbo";
+```
+
+### HTML
+
+```html
+<link rel="stylesheet" href="/node_modules/limbo-css/limbo.css" />
+```
+
+### CDN
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/limbo-css@6/limbo.min.css" />
+```
+
+## Reset Choices
+
+Limbo deliberately:
+
+- uses `:where()` so app styles override the reset without specificity fights;
+- applies `border-box` sizing globally;
+- resets heading, bold, italic, list, link, table, media, and form defaults;
+- keeps colors inherited instead of forcing black;
+- keeps focus outlines available for accessibility;
+- ships CSS, minified CSS, Sass, and Less entry points from one source file.
 
 ## License
 
-This project is an open-source with an [MIT License](https://github.com/watscho/limbo-css/blob/master/license)
+MIT
